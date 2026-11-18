@@ -10,8 +10,10 @@ const site = path.resolve(process.argv[2] || path.join(root, "build/rhel7/site")
 const output = path.resolve(process.argv[3] || path.join(root, "build/qa/rhel7"));
 fs.mkdirSync(output, {recursive: true});
 const report = {site, browsers: [], externalRequests: [], errors: []};
+const expectedLanguages = JSON.parse(fs.readFileSync(path.join(site,"js/highlight-languages.json"),"utf8"));
 const pages = ["index.html", "guide/installation.html", "guide/authoring.html", "guide/configuration.html",
   "guide/links.html", "guide/code-highlighting.html", "guide/styled-content.html", "guide/cheat-sheets.html", "reference/cheat-sheet.html",
+  "guide/workflow.html", "guide/troubleshooting.html",
   "reference/languages.html", "reference/math.html", "reference/components.html", "reference/offline.html", "404.html"];
 const mime = {".html":"text/html", ".css":"text/css", ".js":"application/javascript", ".svg":"image/svg+xml", ".woff2":"font/woff2", ".json":"application/json"};
 const server = http.createServer(function (request, response) {
@@ -113,7 +115,7 @@ async function run() {
             }
             assert(await blocks.count() > 0, "Missing " + language);
           }
-          assert.strictEqual(await page.evaluate(() => hljs.listLanguages().length), 192);
+          assert.deepStrictEqual(await page.evaluate(() => hljs.listLanguages().sort()), expectedLanguages);
           await page.locator("#theme-toggle").click();
           assert.strictEqual(await page.locator("html").getAttribute("data-theme"), "dark");
           await page.reload(); await ready(page);
@@ -164,7 +166,7 @@ async function run() {
         await plainPage.locator('.linked-code a[href="#mean"]').click();
         assert(plainPage.url().endsWith("#mean"), "Links must work without JavaScript");
         await plain.close();
-        result.checks = [pages.length + " pages","required language samples","192 bundled languages","22 rendered math expressions",
+        result.checks = [pages.length + " pages","required language samples",expectedLanguages.length + " bundled languages","22 rendered math expressions",
           "cards and Markdown inside HTML","disclosures","removed labels","highlighted code links and keyboard navigation",
           "multi-token links and escaped C++","plain-text copy","wide cheat sheet and mobile layout","code links without JavaScript",
           "equation reference","direct-file search result navigation","empty search","theme toggle and reload",

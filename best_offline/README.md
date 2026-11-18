@@ -7,7 +7,7 @@ The generated site is designed to open directly from **site/index.html**. Search
 ## What is included
 
 - Read the Docs-style navigation with light and dark appearances.
-- Highlight.js 11.11.1 with all 192 bundled languages, including Lua, Python, C, C++, Java, Fortran, and Bash.
+- Highlight.js 11.12.0 with all 193 bundled languages, including Lua, Python, C, C++, Java, Fortran, and Bash.
 - MathJax 3.2.2, including its local runtime components, using SVG output.
 - Lunr 2.3.9 and a search index generated locally on each build.
 - Local Inter and JetBrains Mono fonts; font data is also embedded in CSS for direct-file compatibility.
@@ -15,6 +15,9 @@ The generated site is designed to open directly from **site/index.html**. Search
 - Separate Linux and Windows wheelhouses, exact dependency locks, asset licenses, and SHA-256 manifests.
 
 See **validation/RESULTS.md** for tested versions and the exact scope of verification.
+
+Current package release: **0.1.1**. See [CHANGELOG.md](CHANGELOG.md) and
+[DEPENDENCIES.md](DEPENDENCIES.md) for updates and the reasons for retained pins.
 
 ## Install offline
 
@@ -59,6 +62,11 @@ Open **site/index.html** after the build. Readers need only a browser and the wh
 The **Writing documentation** sidebar section contains Markdown basics, working link/image/download examples, Python/Lua/C++ highlighting examples, and a LaTeX math guide with source and rendered results. Normal editing and builds do not need npm, Node.js, a TeX installation, or internet access.
 
 The [styled-content guide](docs/guide/styled-content.md) documents reusable CSS classes with copyable examples. The [cheat-sheet guide](docs/guide/cheat-sheets.md) explains links inside code, and the [example API reference](docs/reference/cheat-sheet.md) demonstrates the wide layout. Both light and dark mode use the same local assets.
+
+Start new pages from **templates/api-reference.md** or **templates/runbook.md**.
+The [workflow guide](docs/guide/workflow.md) covers ownership, review dates,
+release checks, and environment upgrades; the [troubleshooting guide](docs/guide/troubleshooting.md)
+covers missing extensions, local assets, search, and links.
 
 For an optional preview server:
 

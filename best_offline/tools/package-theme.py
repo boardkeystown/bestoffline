@@ -27,3 +27,7 @@ with tempfile.TemporaryDirectory(prefix="best-offline-package-") as temporary:
     ], cwd=temporary)
     for wheel in (source / "wheels").glob("*.whl"):
         shutil.copyfile(str(wheel), str(destination / wheel.name))
+        # Keep a version bump from leaving two project wheels in one wheelhouse.
+        for previous in destination.glob("mkdocs_best_offline-*.whl"):
+            if previous.name != wheel.name:
+                previous.unlink()

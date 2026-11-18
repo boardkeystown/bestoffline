@@ -4,7 +4,7 @@ Browser runtime files are copied or built from exact npm package versions. Their
 
 | Software | Version | License |
 | --- | --- | --- |
-| Highlight.js | 11.11.1 | BSD-3-Clause |
+| Highlight.js | 11.12.0 | BSD-3-Clause |
 | Lunr | 2.3.9 | MIT |
 | MathJax | 3.2.2 | Apache-2.0 |
 | Inter font package | 5.3.0 | SIL Open Font License |

@@ -14,11 +14,14 @@ class Page(HTMLParser):
         self.links = []
         self.styles = []
         self.ids = set()
+        self.duplicate_ids = set()
         self.in_style = False
 
     def handle_starttag(self, tag, pairs):
         attrs = dict(pairs)
         if attrs.get("id"):
+            if attrs["id"] in self.ids:
+                self.duplicate_ids.add(attrs["id"])
             self.ids.add(attrs["id"])
         for key in ("src", "poster", "data"):
             if attrs.get(key) and (key != "data" or tag == "object"):
@@ -88,6 +91,8 @@ def check(site):
             resource(origin, match.group(1))
 
     for path, page in pages.items():
+        for identifier in sorted(page.duplicate_ids):
+            errors.append("{}: duplicate anchor id {}".format(path.relative_to(site), identifier))
         for value in page.resources:
             resource(path, value)
         for value in page.links:

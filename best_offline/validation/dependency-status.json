@@ -1,0 +1,660 @@
+{
+  "checked_at_utc": "2026-11-18T08:53:19.529600+00:00",
+  "scope": "Release metadata only; not a vulnerability audit. Python candidates are not resolved or wheel/platform validated.",
+  "python": {
+    "rhel7_python36_wheelhouse": {
+      "python": "3.6.9",
+      "packages": [
+        {
+          "name": "jinja2",
+          "pinned": "3.0.3",
+          "latest": "3.1.6",
+          "latest_requires_python": ">=3.7",
+          "python_metadata_candidate": "3.0.3",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/jinja2/"
+        },
+        {
+          "name": "markdown",
+          "pinned": "3.3.7",
+          "latest": "3.11.3",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "3.3.7",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/markdown/"
+        },
+        {
+          "name": "markupsafe",
+          "pinned": "2.0.1",
+          "latest": "3.0.4",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "2.0.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/markupsafe/"
+        },
+        {
+          "name": "pyyaml",
+          "pinned": "6.0.1",
+          "latest": "6.0.3",
+          "latest_requires_python": ">=3.8",
+          "python_metadata_candidate": "6.0.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pyyaml/"
+        },
+        {
+          "name": "click",
+          "pinned": "8.0.4",
+          "latest": "8.5.1",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "8.0.4",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/click/"
+        },
+        {
+          "name": "ghp-import",
+          "pinned": "2.1.0",
+          "latest": "2.1.0",
+          "latest_requires_python": "",
+          "python_metadata_candidate": "2.1.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/ghp-import/"
+        },
+        {
+          "name": "importlib-metadata",
+          "pinned": "4.8.3",
+          "latest": "10.2.0",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "4.8.3",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/importlib-metadata/"
+        },
+        {
+          "name": "mergedeep",
+          "pinned": "1.3.4",
+          "latest": "1.3.4",
+          "latest_requires_python": ">=3.6",
+          "python_metadata_candidate": "1.3.4",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/mergedeep/"
+        },
+        {
+          "name": "mkdocs",
+          "pinned": "1.3.1",
+          "latest": "1.6.1",
+          "latest_requires_python": ">=3.8",
+          "python_metadata_candidate": "1.3.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/mkdocs/"
+        },
+        {
+          "name": "packaging",
+          "pinned": "21.3",
+          "latest": "26.3",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "21.3",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/packaging/"
+        },
+        {
+          "name": "pip",
+          "pinned": "21.3.1",
+          "latest": "26.3",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "21.3.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pip/"
+        },
+        {
+          "name": "pymdown-extensions",
+          "pinned": "9.1",
+          "latest": "13.1",
+          "latest_requires_python": ">=3.11.5",
+          "python_metadata_candidate": "9.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pymdown-extensions/"
+        },
+        {
+          "name": "pyparsing",
+          "pinned": "3.1.4",
+          "latest": "3.3.3",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "3.1.4",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pyparsing/"
+        },
+        {
+          "name": "python-dateutil",
+          "pinned": "3.0.0",
+          "latest": "4.0.0",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "3.0.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/python-dateutil/"
+        },
+        {
+          "name": "pyyaml-env-tag",
+          "pinned": "0.1",
+          "latest": "1.1",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "0.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pyyaml-env-tag/"
+        },
+        {
+          "name": "setuptools",
+          "pinned": "59.6.0",
+          "latest": "84.2.1",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "59.6.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/setuptools/"
+        },
+        {
+          "name": "six",
+          "pinned": "1.17.0",
+          "latest": "1.17.0",
+          "latest_requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+          "python_metadata_candidate": "1.17.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/six/"
+        },
+        {
+          "name": "typing-extensions",
+          "pinned": "4.1.1",
+          "latest": "4.16.0",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "4.1.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/typing-extensions/"
+        },
+        {
+          "name": "tzdata",
+          "pinned": "2026.6",
+          "latest": "2026.6",
+          "latest_requires_python": ">=2",
+          "python_metadata_candidate": "2026.6",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/tzdata/"
+        },
+        {
+          "name": "watchdog",
+          "pinned": "2.3.1",
+          "latest": "7.1.0",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "2.3.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/watchdog/"
+        },
+        {
+          "name": "wheel",
+          "pinned": "0.37.1",
+          "latest": "0.48.0",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "0.37.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/wheel/"
+        },
+        {
+          "name": "zipp",
+          "pinned": "3.6.0",
+          "latest": "4.1.2",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "3.6.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/zipp/"
+        }
+      ]
+    },
+    "rhel9_python39_wheelhouse": {
+      "python": "3.9.25",
+      "packages": [
+        {
+          "name": "click",
+          "pinned": "8.1.8",
+          "latest": "8.5.1",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "8.1.8",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/click/"
+        },
+        {
+          "name": "ghp-import",
+          "pinned": "2.1.0",
+          "latest": "2.1.0",
+          "latest_requires_python": "",
+          "python_metadata_candidate": "2.1.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/ghp-import/"
+        },
+        {
+          "name": "importlib-metadata",
+          "pinned": "8.7.1",
+          "latest": "10.2.0",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "8.7.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/importlib-metadata/"
+        },
+        {
+          "name": "jinja2",
+          "pinned": "3.1.6",
+          "latest": "3.1.6",
+          "latest_requires_python": ">=3.7",
+          "python_metadata_candidate": "3.1.6",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/jinja2/"
+        },
+        {
+          "name": "markdown",
+          "pinned": "3.9",
+          "latest": "3.11.3",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "3.9",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/markdown/"
+        },
+        {
+          "name": "markupsafe",
+          "pinned": "3.0.4",
+          "latest": "3.0.4",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "3.0.4",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/markupsafe/"
+        },
+        {
+          "name": "mergedeep",
+          "pinned": "1.3.4",
+          "latest": "1.3.4",
+          "latest_requires_python": ">=3.6",
+          "python_metadata_candidate": "1.3.4",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/mergedeep/"
+        },
+        {
+          "name": "mkdocs",
+          "pinned": "1.6.1",
+          "latest": "1.6.1",
+          "latest_requires_python": ">=3.8",
+          "python_metadata_candidate": "1.6.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/mkdocs/"
+        },
+        {
+          "name": "mkdocs-get-deps",
+          "pinned": "0.2.2",
+          "latest": "0.2.2",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "0.2.2",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/mkdocs-get-deps/"
+        },
+        {
+          "name": "packaging",
+          "pinned": "26.3",
+          "latest": "26.3",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "26.3",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/packaging/"
+        },
+        {
+          "name": "pathspec",
+          "pinned": "1.1.1",
+          "latest": "1.1.1",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "1.1.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pathspec/"
+        },
+        {
+          "name": "pip",
+          "pinned": "25.3",
+          "latest": "26.3",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "26.0.1",
+          "candidate_newer_than_pin": true,
+          "source": "https://pypi.org/project/pip/"
+        },
+        {
+          "name": "platformdirs",
+          "pinned": "4.4.0",
+          "latest": "4.14.7",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "4.4.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/platformdirs/"
+        },
+        {
+          "name": "pymdown-extensions",
+          "pinned": "10.21.3",
+          "latest": "13.1",
+          "latest_requires_python": ">=3.11.5",
+          "python_metadata_candidate": "10.21.3",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pymdown-extensions/"
+        },
+        {
+          "name": "python-dateutil",
+          "pinned": "3.0.0",
+          "latest": "4.0.0",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "3.0.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/python-dateutil/"
+        },
+        {
+          "name": "pyyaml",
+          "pinned": "6.0.3",
+          "latest": "6.0.3",
+          "latest_requires_python": ">=3.8",
+          "python_metadata_candidate": "6.0.3",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pyyaml/"
+        },
+        {
+          "name": "pyyaml-env-tag",
+          "pinned": "1.1",
+          "latest": "1.1",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "1.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pyyaml-env-tag/"
+        },
+        {
+          "name": "setuptools",
+          "pinned": "80.9.0",
+          "latest": "84.2.1",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "82.0.1",
+          "candidate_newer_than_pin": true,
+          "source": "https://pypi.org/project/setuptools/"
+        },
+        {
+          "name": "six",
+          "pinned": "1.17.0",
+          "latest": "1.17.0",
+          "latest_requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,>=2.7",
+          "python_metadata_candidate": "1.17.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/six/"
+        },
+        {
+          "name": "tzdata",
+          "pinned": "2026.6",
+          "latest": "2026.6",
+          "latest_requires_python": ">=2",
+          "python_metadata_candidate": "2026.6",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/tzdata/"
+        },
+        {
+          "name": "watchdog",
+          "pinned": "6.0.0",
+          "latest": "7.1.0",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "6.0.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/watchdog/"
+        },
+        {
+          "name": "wheel",
+          "pinned": "0.45.1",
+          "latest": "0.48.0",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "0.48.0",
+          "candidate_newer_than_pin": true,
+          "source": "https://pypi.org/project/wheel/"
+        },
+        {
+          "name": "zipp",
+          "pinned": "3.23.1",
+          "latest": "4.1.2",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "3.23.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/zipp/"
+        }
+      ]
+    },
+    "windows_python314_wheelhouse": {
+      "python": "3.14.6",
+      "packages": [
+        {
+          "name": "click",
+          "pinned": "8.5.1",
+          "latest": "8.5.1",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "8.5.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/click/"
+        },
+        {
+          "name": "colorama",
+          "pinned": "0.4.6",
+          "latest": "0.4.6",
+          "latest_requires_python": "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7",
+          "python_metadata_candidate": "0.4.6",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/colorama/"
+        },
+        {
+          "name": "ghp-import",
+          "pinned": "2.1.0",
+          "latest": "2.1.0",
+          "latest_requires_python": "",
+          "python_metadata_candidate": "2.1.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/ghp-import/"
+        },
+        {
+          "name": "jinja2",
+          "pinned": "3.1.6",
+          "latest": "3.1.6",
+          "latest_requires_python": ">=3.7",
+          "python_metadata_candidate": "3.1.6",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/jinja2/"
+        },
+        {
+          "name": "markdown",
+          "pinned": "3.9",
+          "latest": "3.11.3",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "3.11.3",
+          "candidate_newer_than_pin": true,
+          "source": "https://pypi.org/project/markdown/"
+        },
+        {
+          "name": "markupsafe",
+          "pinned": "3.0.4",
+          "latest": "3.0.4",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "3.0.4",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/markupsafe/"
+        },
+        {
+          "name": "mergedeep",
+          "pinned": "1.3.4",
+          "latest": "1.3.4",
+          "latest_requires_python": ">=3.6",
+          "python_metadata_candidate": "1.3.4",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/mergedeep/"
+        },
+        {
+          "name": "mkdocs",
+          "pinned": "1.6.1",
+          "latest": "1.6.1",
+          "latest_requires_python": ">=3.8",
+          "python_metadata_candidate": "1.6.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/mkdocs/"
+        },
+        {
+          "name": "mkdocs-get-deps",
+          "pinned": "0.2.2",
+          "latest": "0.2.2",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "0.2.2",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/mkdocs-get-deps/"
+        },
+        {
+          "name": "packaging",
+          "pinned": "26.3",
+          "latest": "26.3",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "26.3",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/packaging/"
+        },
+        {
+          "name": "pathspec",
+          "pinned": "1.1.1",
+          "latest": "1.1.1",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "1.1.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pathspec/"
+        },
+        {
+          "name": "pip",
+          "pinned": "25.3",
+          "latest": "26.3",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "26.3",
+          "candidate_newer_than_pin": true,
+          "source": "https://pypi.org/project/pip/"
+        },
+        {
+          "name": "platformdirs",
+          "pinned": "4.14.7",
+          "latest": "4.14.7",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "4.14.7",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/platformdirs/"
+        },
+        {
+          "name": "pymdown-extensions",
+          "pinned": "10.21.3",
+          "latest": "13.1",
+          "latest_requires_python": ">=3.11.5",
+          "python_metadata_candidate": "13.1",
+          "candidate_newer_than_pin": true,
+          "source": "https://pypi.org/project/pymdown-extensions/"
+        },
+        {
+          "name": "python-dateutil",
+          "pinned": "4.0.0",
+          "latest": "4.0.0",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "4.0.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/python-dateutil/"
+        },
+        {
+          "name": "pyyaml",
+          "pinned": "6.0.3",
+          "latest": "6.0.3",
+          "latest_requires_python": ">=3.8",
+          "python_metadata_candidate": "6.0.3",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pyyaml/"
+        },
+        {
+          "name": "pyyaml-env-tag",
+          "pinned": "1.1",
+          "latest": "1.1",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "1.1",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/pyyaml-env-tag/"
+        },
+        {
+          "name": "setuptools",
+          "pinned": "80.9.0",
+          "latest": "84.2.1",
+          "latest_requires_python": ">=3.10",
+          "python_metadata_candidate": "84.2.1",
+          "candidate_newer_than_pin": true,
+          "source": "https://pypi.org/project/setuptools/"
+        },
+        {
+          "name": "tzdata",
+          "pinned": "2026.6",
+          "latest": "2026.6",
+          "latest_requires_python": ">=2",
+          "python_metadata_candidate": "2026.6",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/tzdata/"
+        },
+        {
+          "name": "watchdog",
+          "pinned": "7.1.0",
+          "latest": "7.1.0",
+          "latest_requires_python": ">=3.11",
+          "python_metadata_candidate": "7.1.0",
+          "candidate_newer_than_pin": false,
+          "source": "https://pypi.org/project/watchdog/"
+        },
+        {
+          "name": "wheel",
+          "pinned": "0.45.1",
+          "latest": "0.48.0",
+          "latest_requires_python": ">=3.9",
+          "python_metadata_candidate": "0.48.0",
+          "candidate_newer_than_pin": true,
+          "source": "https://pypi.org/project/wheel/"
+        }
+      ]
+    }
+  },
+  "npm": [
+    {
+      "name": "@fontsource/inter",
+      "pinned": "5.3.0",
+      "latest": "5.3.0",
+      "source": "https://registry.npmjs.org/%40fontsource%2Finter/latest"
+    },
+    {
+      "name": "@fontsource/jetbrains-mono",
+      "pinned": "5.3.0",
+      "latest": "5.3.0",
+      "source": "https://registry.npmjs.org/%40fontsource%2Fjetbrains-mono/latest"
+    },
+    {
+      "name": "esbuild",
+      "pinned": "0.25.12",
+      "latest": "0.28.2",
+      "source": "https://registry.npmjs.org/esbuild/latest"
+    },
+    {
+      "name": "highlight.js",
+      "pinned": "11.12.0",
+      "latest": "11.12.0",
+      "source": "https://registry.npmjs.org/highlight.js/latest"
+    },
+    {
+      "name": "lunr",
+      "pinned": "2.3.9",
+      "latest": "2.3.9",
+      "source": "https://registry.npmjs.org/lunr/latest"
+    },
+    {
+      "name": "mathjax",
+      "pinned": "3.2.2",
+      "latest": "4.1.3",
+      "source": "https://registry.npmjs.org/mathjax/latest"
+    },
+    {
+      "name": "playwright",
+      "pinned": "1.56.1",
+      "latest": "1.65.1",
+      "source": "https://registry.npmjs.org/playwright/latest"
+    }
+  ],
+  "errors": []
+}

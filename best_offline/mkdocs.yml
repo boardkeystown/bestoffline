@@ -24,7 +24,9 @@ nav:
   - Getting started:
       - Offline installation: guide/installation.md
       - Theme configuration: guide/configuration.md
+      - Troubleshooting: guide/troubleshooting.md
   - Writing documentation:
+      - Workflow and page templates: guide/workflow.md
       - Markdown basics: guide/authoring.md
       - Links, images, and downloads: guide/links.md
       - Code highlighting: guide/code-highlighting.md

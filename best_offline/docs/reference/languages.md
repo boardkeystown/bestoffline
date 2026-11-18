@@ -1,6 +1,6 @@
 # Language gallery
 
-The local Highlight.js bundle contains all 192 languages included in version 11.11.1. Explicit language labels keep highlighting predictable and avoid expensive autodetection.
+The local Highlight.js bundle contains all 193 languages included in version 11.12.0. Explicit language labels keep highlighting predictable and avoid expensive autodetection.
 
 ## Python
 

@@ -189,6 +189,9 @@ Edit the Markdown source, not the generated HTML: the next build replaces genera
 
 ## Continue with examples
 
+- [Workflow and page templates](workflow.md): API/runbook starters, ownership, and release checks.
+- [Troubleshooting](troubleshooting.md): missing extensions, assets, search, and broken links.
+
 - [Links, images, and downloads](links.md): paths, heading anchors, and working local examples.
 - [Code highlighting](code-highlighting.md): Markdown fences and Python, Lua, and C++ examples.
 - [Cards and styled content](styled-content.md): copyable cards, icons, badges, expandable sections, and every reusable CSS class.

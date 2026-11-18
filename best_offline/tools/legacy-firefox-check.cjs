@@ -8,6 +8,7 @@ const root = path.resolve(__dirname, "..");
 const legacy = path.join(root, "build/legacy-firefox");
 const site = path.resolve(process.argv[2] || path.join(root, "build/rhel7/offline-site"));
 const output = path.resolve(process.argv[3] || path.join(root, "build/qa/firefox78"));
+const expectedLanguages = JSON.parse(fs.readFileSync(path.join(site,"js/highlight-languages.json"),"utf8"));
 fs.mkdirSync(output, {recursive:true});
 const driver = spawn(path.join(legacy,"driver/geckodriver.exe"), ["--host","127.0.0.1","--port","4447","--log","error"], {windowsHide:true});
 const logs = [];
@@ -51,6 +52,7 @@ async function run() {
     await command("/window/rect",{width:1440,height:1000});
     for (const file of ["index.html","guide/installation.html","guide/authoring.html","guide/configuration.html",
       "guide/links.html","guide/code-highlighting.html","guide/styled-content.html","guide/cheat-sheets.html","reference/cheat-sheet.html",
+      "guide/workflow.html","guide/troubleshooting.html",
       "reference/languages.html","reference/math.html","reference/components.html","reference/offline.html","404.html"]) {
       await command("/url",{url:pathToFileURL(path.join(site,file)).href});
       await waitFor("window.hljs && window.MathJax && MathJax.startup && MathJax.startup.document",file);
@@ -81,7 +83,7 @@ async function run() {
       }
       assert.strictEqual(await execute("return document.querySelectorAll('.offline-label,.header-caption,.page-footer').length;"),0);
       if (file === "reference/languages.html") {
-        assert.strictEqual(await execute("return hljs.listLanguages().length;"),192);
+        assert.deepStrictEqual(await execute("return hljs.listLanguages().sort();"),expectedLanguages);
         const counts = await execute("return ['python','lua','c','cpp','java','fortran','bash'].map(function(x){return {language:x,count:document.querySelectorAll('code.language-'+x+' span').length};});");
         counts.forEach(item=>assert(item.count>0,"No syntax tokens for "+item.language));
         report.highlighting = counts;
@@ -104,7 +106,7 @@ async function run() {
     const screenshot = await request("GET","/session/"+session+"/screenshot");
     fs.writeFileSync(path.join(output,"firefox78-languages-dark.png"),Buffer.from(screenshot,"base64"));
     assert.deepStrictEqual(report.externalResources,[]);
-    report.checks = ["direct-file pages","required language syntax tokens","192 registered languages","math SVG",
+    report.checks = ["direct-file pages","required language syntax tokens",expectedLanguages.length + " registered languages","math SVG",
       "clickable highlighted signatures","escaped C++ text preserved","wide cheat sheet","removed labels",
       "equation rendering without errors","nested direct-file search navigation","dark mode","no horizontal overflow",
       "no HTTP(S) resources in resource timing","outbound proxy disabled"];

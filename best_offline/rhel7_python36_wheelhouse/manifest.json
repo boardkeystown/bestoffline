@@ -25,10 +25,10 @@
       "version": "2.0.1"
     },
     {
-      "file": "PyYAML-6.0-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl",
-      "sha256": "98c4d36e99714e55cfbaaee6dd5badbc9a1ec339ebfc3b1f52e293aee6bb71a4",
+      "file": "PyYAML-6.0.1-cp36-cp36m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+      "sha256": "afd7e57eddb1a54f0f1a974bc4391af8bcce0b444685d936840f125cf046d5bd",
       "name": "PyYAML",
-      "version": "6.0"
+      "version": "6.0.1"
     },
     {
       "file": "click-8.0.4-py3-none-any.whl",
@@ -61,10 +61,10 @@
       "version": "1.3.1"
     },
     {
-      "file": "mkdocs_best_offline-0.1.0-py3-none-any.whl",
-      "sha256": "3bdd31e471062393848a634000f3f19d9c4a6473930b19b27b71e2d9188bbd84",
+      "file": "mkdocs_best_offline-0.1.1-py3-none-any.whl",
+      "sha256": "33fc85f88751b19f300fe9ca222214c112118a4bd45cb40340fb3ba38b63ca6a",
       "name": "mkdocs-best-offline",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "file": "packaging-21.3-py3-none-any.whl",
@@ -127,10 +127,10 @@
       "version": "2026.6"
     },
     {
-      "file": "watchdog-2.1.9-py3-none-manylinux2014_x86_64.whl",
-      "sha256": "4f4e1c4aa54fb86316a62a87b3378c025e228178d55481d30d857c6c438897d6",
+      "file": "watchdog-2.3.1-py3-none-manylinux2014_x86_64.whl",
+      "sha256": "8a4d484e846dcd75e96b96d80d80445302621be40e293bfdf34a631cab3b33dc",
       "name": "watchdog",
-      "version": "2.1.9"
+      "version": "2.3.1"
     },
     {
       "file": "wheel-0.37.1-py2.py3-none-any.whl",

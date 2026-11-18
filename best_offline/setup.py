@@ -12,7 +12,7 @@ ASSETS = [
 
 setup(
     name="mkdocs-best-offline",
-    version="0.1.0",
+    version="0.1.1",
     description="A self-contained Read the Docs inspired MkDocs theme",
     packages=["best_offline_theme"],
     package_dir={"best_offline_theme": "theme"},

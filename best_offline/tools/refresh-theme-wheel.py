@@ -1,11 +1,13 @@
 """Replace only this project's wheel and update its locked hash in a wheelhouse."""
 import argparse
+from email.parser import Parser
 import hashlib
 import json
 from pathlib import Path
 import re
 import subprocess
 import sys
+import zipfile
 
 root = Path(__file__).resolve().parent.parent
 parser = argparse.ArgumentParser()
@@ -14,10 +16,15 @@ args = parser.parse_args()
 wheelhouse = Path(args.wheelhouse).resolve()
 subprocess.check_call([sys.executable, str(root / "tools" / "package-theme.py"), str(wheelhouse)])
 wheel = next(wheelhouse.glob("mkdocs_best_offline-*.whl"))
+with zipfile.ZipFile(str(wheel)) as archive:
+    metadata_file = next(name for name in archive.namelist() if name.endswith(".dist-info/METADATA"))
+    metadata = Parser().parsestr(archive.read(metadata_file).decode("utf-8"))
 digest = hashlib.sha256(wheel.read_bytes()).hexdigest()
 manifest = json.loads((wheelhouse / "manifest.json").read_text(encoding="utf-8"))
 for entry in manifest["wheels"]:
     if entry["name"].lower().replace("_", "-") == "mkdocs-best-offline":
+        entry["name"] = metadata["Name"]
+        entry["version"] = metadata["Version"]
         entry["file"] = wheel.name
         entry["sha256"] = digest
         requirement = entry["name"] + "==" + entry["version"] + " --hash=sha256:" + digest

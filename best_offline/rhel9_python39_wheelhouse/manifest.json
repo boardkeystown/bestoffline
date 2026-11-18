@@ -7,12 +7,6 @@
   "image": "registry.access.redhat.com/ubi9/python-39@sha256:447a4c9f6ead4f063bed8778793ac9e972004e5a55d103b375de83c885887e50",
   "wheels": [
     {
-      "file": "Markdown-3.7-py3-none-any.whl",
-      "sha256": "7eb6df5690b81a1d7942992c97fad2938e956e79df20cbc6186e9c3a77b1c803",
-      "name": "Markdown",
-      "version": "3.7"
-    },
-    {
       "file": "click-8.1.8-py3-none-any.whl",
       "sha256": "63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2",
       "name": "click",
@@ -37,6 +31,12 @@
       "version": "3.1.6"
     },
     {
+      "file": "markdown-3.9-py3-none-any.whl",
+      "sha256": "9f4d91ed810864ea88a6f32c07ba8bee1346c0cc1f6b1f9f6c822f2a9667d280",
+      "name": "Markdown",
+      "version": "3.9"
+    },
+    {
       "file": "markupsafe-3.0.4-cp39-cp39-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
       "sha256": "5e8b3d0b18fd623afa12ecb2ce8d8becef69f9b5440c6330c7972200e0bb84b0",
       "name": "MarkupSafe",
@@ -55,10 +55,10 @@
       "version": "1.6.1"
     },
     {
-      "file": "mkdocs_best_offline-0.1.0-py3-none-any.whl",
-      "sha256": "15336ce5959b76f7a016aa4c1e52d963d7d08b240325d95d04688cea8783b288",
+      "file": "mkdocs_best_offline-0.1.1-py3-none-any.whl",
+      "sha256": "82ad3879729246b9dcafb7bd660d122115da98dbccb2501b3a76c433d96a1312",
       "name": "mkdocs-best-offline",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "file": "mkdocs_get_deps-0.2.2-py3-none-any.whl",
@@ -91,10 +91,10 @@
       "version": "4.4.0"
     },
     {
-      "file": "pymdown_extensions-10.14.3-py3-none-any.whl",
-      "sha256": "05e0bee73d64b9c71a4ae17c72abc2f700e8bc8403755a00580b49a4e9f189e9",
+      "file": "pymdown_extensions-10.21.3-py3-none-any.whl",
+      "sha256": "d7a5d08014fc571e80ca21dd6f854e31f94c489800350564d55d15b3c41e76b6",
       "name": "pymdown-extensions",
-      "version": "10.14.3"
+      "version": "10.21.3"
     },
     {
       "file": "python_dateutil-3.0.0-py2.py3-none-any.whl",

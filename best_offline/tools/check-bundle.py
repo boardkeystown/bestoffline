@@ -1,5 +1,6 @@
 """Validate source/asset/wheel integrity and installer rejection behavior."""
 import hashlib
+from email.parser import Parser
 import importlib.util
 import json
 from pathlib import Path
@@ -22,7 +23,13 @@ for name in ("rhel7_python36_wheelhouse", "rhel9_python39_wheelhouse", "windows_
     lock = (directory / "requirements.lock").read_text(encoding="utf-8")
     for item in manifest["wheels"]:
         assert hashlib.sha256((directory / item["file"]).read_bytes()).hexdigest() == item["sha256"]
-        assert "--hash=sha256:" + item["sha256"] in lock
+        with zipfile.ZipFile(str(directory / item["file"])) as archive:
+            metadata_file = next(name for name in archive.namelist() if name.endswith(".dist-info/METADATA"))
+            metadata = Parser().parsestr(archive.read(metadata_file).decode("utf-8"))
+        assert metadata["Name"].lower().replace("_", "-") == item["name"].lower().replace("_", "-"), item["file"]
+        assert metadata["Version"] == item["version"], item["file"] + ": manifest version differs from wheel"
+        requirement = item["name"] + "==" + item["version"] + " --hash=sha256:" + item["sha256"]
+        assert requirement in lock, item["file"] + ": manifest differs from lock"
     with zipfile.ZipFile(str(next(directory.glob("mkdocs_best_offline-*.whl")))) as archive:
         for file, content in source.items():
             assert archive.read("best_offline_theme/" + file) == content, name + ": " + file

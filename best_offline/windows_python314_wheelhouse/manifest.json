@@ -31,10 +31,10 @@
       "version": "3.1.6"
     },
     {
-      "file": "Markdown-3.7-py3-none-any.whl",
-      "sha256": "7eb6df5690b81a1d7942992c97fad2938e956e79df20cbc6186e9c3a77b1c803",
+      "file": "markdown-3.9-py3-none-any.whl",
+      "sha256": "9f4d91ed810864ea88a6f32c07ba8bee1346c0cc1f6b1f9f6c822f2a9667d280",
       "name": "Markdown",
-      "version": "3.7"
+      "version": "3.9"
     },
     {
       "file": "markupsafe-3.0.4-cp314-cp314-win_amd64.whl",
@@ -55,10 +55,10 @@
       "version": "1.6.1"
     },
     {
-      "file": "mkdocs_best_offline-0.1.0-py3-none-any.whl",
-      "sha256": "e5ade8872b98dc9683e065f5b5a9acf7b7052b9fc48fbf9fc562bc5725b02ddc",
+      "file": "mkdocs_best_offline-0.1.1-py3-none-any.whl",
+      "sha256": "d3eeecbd3304777428a5e8788c4a68a11aa70e5c7bbee3a02f5e02270040bb85",
       "name": "mkdocs-best-offline",
-      "version": "0.1.0"
+      "version": "0.1.1"
     },
     {
       "file": "mkdocs_get_deps-0.2.2-py3-none-any.whl",
@@ -91,10 +91,10 @@
       "version": "4.14.7"
     },
     {
-      "file": "pymdown_extensions-10.14.3-py3-none-any.whl",
-      "sha256": "05e0bee73d64b9c71a4ae17c72abc2f700e8bc8403755a00580b49a4e9f189e9",
+      "file": "pymdown_extensions-10.21.3-py3-none-any.whl",
+      "sha256": "d7a5d08014fc571e80ca21dd6f854e31f94c489800350564d55d15b3c41e76b6",
       "name": "pymdown-extensions",
-      "version": "10.14.3"
+      "version": "10.21.3"
     },
     {
       "file": "python_dateutil-4.0.0-py3-none-any.whl",

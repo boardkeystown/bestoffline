@@ -8,10 +8,10 @@ destination = root / "dist"
 destination.mkdir(exist_ok=True)
 archive_path = destination / "best_offline-transfer.zip"
 directories = [
-    "docs", "theme", "tools", "requirements", "containers", "validation", "site",
+    "docs", "theme", "tools", "templates", "requirements", "containers", "validation", "site",
     "rhel7_python36_wheelhouse", "rhel9_python39_wheelhouse", "windows_python314_wheelhouse",
 ]
-files = ["README.md", "THIRD_PARTY.md", "mkdocs.yml", "setup.py", "MANIFEST.in",
+files = ["README.md", "THIRD_PARTY.md", "DEPENDENCIES.md", "CHANGELOG.md", "mkdocs.yml", "setup.py", "MANIFEST.in",
          "package.json", "package-lock.json"]
 paths = [root / file for file in files]
 for name in directories:

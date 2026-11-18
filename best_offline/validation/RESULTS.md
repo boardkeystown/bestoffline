@@ -2,7 +2,44 @@
 
 Validated on 2026-11-18. The included JSON reports contain exact interpreter, OS, and browser versions.
 
-## Current: styled content and clickable cheat sheets
+## Current: release 0.1.1
+
+The compatible dependency updates in **../DEPENDENCIES.md** passed fresh offline
+installations and strict override/installed-theme builds on UBI7/Python 3.6.9,
+UBI9/Python 3.9.25, and Windows/Python 3.14.6. Linux containers used
+**--network none**; Windows installation/build commands used the Python socket
+guard. The wheel counts remain 23, 24, and 22 respectively.
+
+Every target passed dependency checks, search rebuilds, three anchor-audit
+regression fixtures, and output audits covering 16 HTML pages, three active
+stylesheets, and 149 searchable sections. All packaged theme files match the
+source; all 122 vendored asset hashes and all wheelhouse hashes match.
+
+Edge 157 and Firefox 142 passed the full browser suite on a copy of the site in a
+different directory containing a space, in both file and localhost modes.
+Checks include all 193 Highlight.js language registrations, required language
+samples, links inside highlighted code, plain-text copying, code links without
+JavaScript, math, search, appearance, and mobile layout. No external requests
+or browser errors occurred. Actual Firefox 78.15 ESR passed direct-file checks
+on the RHEL7-built output.
+
+Both new page templates were also copied into a standalone MkDocs configuration
+and passed a strict installed-theme build and link/resource audit on Windows.
+An isolated theme-refresh fixture verified a 0.1.0-to-0.1.1 version bump, updated
+hashes, removal of the old wheel, and preservation of unrelated pins. The bundle
+audit also checks every wheel's embedded package name/version against its
+manifest and exact lock entry.
+
+Current reports are **release-0.1.1-rhel7-build.json**,
+**release-0.1.1-rhel9-build.json**, **release-0.1.1-windows-build.json**,
+**release-0.1.1-browsers.json**, and **release-0.1.1-firefox78.json**.
+Matching logs and **release-0.1.1-source-sha256.json** record the evidence and
+source snapshot. The registry review and npm advisory result are separate
+reports; see **../DEPENDENCIES.md** for their scope.
+
+The older reports below are retained as history.
+
+## Previous: styled content and clickable cheat sheets
 
 Removed the sidebar availability label, header slogan, and bottom branding.
 Added authoring guides for cards, CSS classes, badges, disclosures, and linked

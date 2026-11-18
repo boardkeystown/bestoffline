@@ -2,7 +2,7 @@
   "packages": [
     {
       "name": "highlight.js",
-      "version": "11.11.1",
+      "version": "11.12.0",
       "license": "BSD-3-Clause",
       "source": "https://registry.npmjs.org/highlight.js"
     },
@@ -147,8 +147,8 @@
     "licenses/mathjax.txt": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
     "licenses/_fontsource_inter.txt": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
     "licenses/_fontsource_jetbrains-mono.txt": "403581b69dac5cff4079205e01c6b467e56af449ecbd7247693ddb1baafa005b",
-    "js/highlight.min.js": "b2e422a40064204e0d5e71ff17860c6b390ae3b500bc8f0dd48f96043c9a12c8",
-    "js/highlight-languages.json": "a493917395366c1fb4655845be37ae0d2b24d9605a9a3085128c3f68dc176315",
+    "js/highlight.min.js": "171aedbd586c462300aabe03a34c3ec78126b10e48f96543dee45b2707540d30",
+    "js/highlight-languages.json": "ed8007717fff0210ec4e439d5d762fa611779b313807545bf52b6b4d9188db19",
     "js/lunr.min.js": "0c50d9002b85780a842afffb567bb54ede402dae7c6dc5997a018614d8044fc8",
     "css/highlight.css": "3d5a369f6ef398e660eea714478a5a3e5954684d4c0527f6d598e2d387fb13a9",
     "css/vs.css": "d97e3ee1641c9d7f93177f37da936d41ccc04f5569db606601bcaad30ce0515e",

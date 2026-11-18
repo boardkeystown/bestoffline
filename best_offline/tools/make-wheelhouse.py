@@ -64,4 +64,10 @@ print("Locked {} wheels for {} Python {}".format(len(lines), manifest["system"],
 for path in destination.iterdir():
     if path.is_file():
         shutil.copyfile(str(path), str(final_destination / path.name))
+# Remove only replaced wheel files after the complete new set has been copied.
+# Leaving an older version here would make the verified installer reject it.
+new_wheels = {path.name for path in destination.glob("*.whl")}
+for previous in final_destination.glob("*.whl"):
+    if previous.name not in new_wheels:
+        previous.unlink()
 scratch.cleanup()

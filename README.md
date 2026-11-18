@@ -14,6 +14,10 @@ Start with the [installation and maintenance instructions](best_offline/README.m
 the [authoring guide](best_offline/docs/guide/authoring.md), or the
 [validation results](best_offline/validation/RESULTS.md).
 
+Release **0.1.1** adds page templates, troubleshooting, and compatible dependency
+updates. See the [dependency review](best_offline/DEPENDENCIES.md) for the versions
+that intentionally remain pinned for older targets.
+
 ## Windows quick start
 
 From this repository's root, using standard x86_64 CPython 3.14:

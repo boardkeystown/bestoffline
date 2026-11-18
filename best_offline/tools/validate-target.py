@@ -39,6 +39,7 @@ def run(name, command):
 
 
 run("dependencies", [sys.executable, guard, "pip", "--disable-pip-version-check", "check"])
+run("anchor-audit-tests", [sys.executable, str(root / "tools" / "test-site-audit.py")])
 run("search-rebuild", [sys.executable, str(root / "tools" / "check-rebuild.py")])
 run("override-build", [sys.executable, guard, "mkdocs", "build", "--strict", "--site-dir", str(output / "site")])
 run("override-audit", [sys.executable, str(root / "tools" / "check-site.py"), str(output / "site")])

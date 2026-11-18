@@ -1,6 +1,6 @@
 {
   "name": "best-offline-theme-assets",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Maintainer-only asset preparation. Never required to build or read documentation offline.",
   "scripts": {
@@ -11,7 +11,7 @@
     "@fontsource/inter": "5.3.0",
     "@fontsource/jetbrains-mono": "5.3.0",
     "esbuild": "0.25.12",
-    "highlight.js": "11.11.1",
+    "highlight.js": "11.12.0",
     "lunr": "2.3.9",
     "mathjax": "3.2.2",
     "playwright": "1.56.1"
