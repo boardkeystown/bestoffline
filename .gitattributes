@@ -1,0 +1,3 @@
+# Preserve exact bytes across Windows/Linux checkouts. Vendored asset manifests,
+# theme-wheel comparisons, and validation records use SHA-256 file hashes.
+* -text

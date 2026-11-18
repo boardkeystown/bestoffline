@@ -1,0 +1,17 @@
+{
+  "python": "3.14.6",
+  "system": "Windows",
+  "machine": "AMD64",
+  "mkdocs": "1.6.1",
+  "python_network_blocked": true,
+  "container_network_none": false,
+  "checks": [
+    "dependencies",
+    "search-rebuild",
+    "override-build",
+    "override-audit",
+    "packaged-build",
+    "packaged-audit"
+  ],
+  "passed": true
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="{{ config.site_description | default('', true) | e }}">
+  <title>{% if page and page.title %}{{ page.title | e }} · {% endif %}{{ config.site_name | e }}</title>
+  <script src="{{ 'js/theme-init.js' | url }}"></script>
+  {% block styles %}
+  <link rel="icon" href="{{ 'img/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="stylesheet" href="{{ 'css/fonts.css' | url }}">
+  <link rel="stylesheet" href="{{ 'css/theme.css' | url }}">
+  <link rel="stylesheet" href="{{ 'css/highlight.css' | url }}">
+  {% for path in config.extra_css %}<link rel="stylesheet" href="{{ path | url }}">{% endfor %}
+  {% endblock %}
+</head>
+<body data-base-url="{{ base_url | e }}"{% if page and page.meta.wide %} class="page-wide"{% endif %}>
+  <a class="skip-link" href="#content">Skip to content</a>
+  <header class="mobile-bar">
+    <button id="menu-toggle" class="icon-button" type="button" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation">☰</button>
+    <a href="{{ nav.homepage.url | url }}">{{ config.site_name | e }}</a>
+  </header>
+  <div class="nav-backdrop" id="nav-backdrop"></div>
+  <aside id="sidebar" class="sidebar" aria-label="Documentation sidebar">
+    {% block site_name %}
+    <a class="brand" href="{{ nav.homepage.url | url }}">
+      <svg width="32" height="32" viewBox="0 0 32 32" aria-hidden="true"><rect width="32" height="32" rx="8" fill="currentColor" opacity=".15"/><path d="M8 8h7c2 0 3 1 3 2 0-1 1-2 3-2h3v15h-4c-1 0-2 .5-2 1-1-1-2-1-3-1H8V8Z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M18 10v14" stroke="currentColor" stroke-width="1.6"/></svg>
+      <span>{{ config.site_name | e }}<small>DOCUMENTATION</small></span>
+    </a>
+    {% endblock %}
+    <button type="button" class="search-open" aria-haspopup="dialog">
+      <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg>
+      <span>Search documentation</span><kbd>/</kbd>
+    </button>
+    {% block site_nav %}
+    <nav class="site-nav" aria-label="Main navigation">
+      <ul>
+      {% for item in nav recursive %}
+        <li>
+        {% if item.children %}
+          <details class="nav-section" open>
+            <summary>{{ item.title | e }}</summary>
+            <ul>{{ loop(item.children) }}</ul>
+          </details>
+        {% else %}
+          <a href="{{ item.url | url }}"{% if item.active %} class="current" aria-current="page"{% endif %}>{{ item.title | e }}</a>
+        {% endif %}
+        </li>
+      {% endfor %}
+      </ul>
+    </nav>
+    {% endblock %}
+    <div class="sidebar-footer">
+      <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" aria-pressed="false">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M20 14a8 8 0 0 1-10-10 8 8 0 1 0 10 10Z"/></svg>
+        <span id="theme-label">Dark mode</span>
+      </button>
+    </div>
+  </aside>
+  <div class="page-shell">
+    <header class="page-header">
+      <nav class="breadcrumbs" aria-label="Breadcrumbs">
+        <a href="{{ nav.homepage.url | url }}">Docs</a>
+        {% if page %}{% for ancestor in page.ancestors | reverse %}<span aria-hidden="true">/</span><span>{{ ancestor.title | e }}</span>{% endfor %}
+        <span aria-hidden="true">/</span><span aria-current="page">{{ page.title | e }}</span>{% endif %}
+      </nav>
+    </header>
+    <div class="reading-layout">
+      <main id="content" tabindex="-1">
+        {% block content %}{% if page %}{{ page.content }}{% endif %}{% endblock %}
+        {% block footer %}
+        <nav class="page-pagination" aria-label="Previous and next pages">
+          {% if page and page.previous_page %}<a href="{{ page.previous_page.url | url }}"><small>← PREVIOUS</small><span>{{ page.previous_page.title | e }}</span></a>{% else %}<span></span>{% endif %}
+          {% if page and page.next_page %}<a class="next" href="{{ page.next_page.url | url }}"><small>NEXT →</small><span>{{ page.next_page.title | e }}</span></a>{% endif %}
+        </nav>
+        {% endblock %}
+      </main>
+      {% if page and page.toc %}
+      <aside class="page-toc" aria-label="On this page">
+        <p>ON THIS PAGE</p>
+        <ul>{% for item in page.toc recursive %}<li><a href="{{ item.url }}">{{ item.title | striptags | e }}</a>{% if item.children %}<ul>{{ loop(item.children) }}</ul>{% endif %}</li>{% endfor %}</ul>
+        <a class="back-top" href="#">Back to top ↑</a>
+      </aside>
+      {% endif %}
+    </div>
+  </div>
+  <div id="search-dialog" class="search-dialog" role="dialog" aria-modal="true" aria-labelledby="search-heading" hidden>
+    <div class="search-card">
+      <div class="search-heading"><h2 id="search-heading">Search documentation</h2><button type="button" id="search-close" class="icon-button" aria-label="Close search">×</button></div>
+      <label class="sr-only" for="search-input">Search terms</label>
+      <input id="search-input" type="search" placeholder="Search a topic, command, or language…" autocomplete="off">
+      <p id="search-status" role="status">Type to search. Everything stays on this device.</p>
+      <ul id="search-results"></ul>
+      <div class="search-help"><span>Local search · no connection needed</span><span><kbd>Esc</kbd> to close</span></div>
+    </div>
+  </div>
+  <noscript><p class="noscript-note">JavaScript is disabled. Navigation and code remain readable; search, math rendering, and syntax coloring require JavaScript.</p></noscript>
+  {% block scripts %}
+  <script defer src="{{ 'js/highlight.min.js' | url }}"></script>
+  <script defer src="{{ 'js/lunr.min.js' | url }}"></script>
+  <script defer src="{{ 'js/search-data.js' | url }}"></script>
+  <script defer src="{{ 'js/theme.js' | url }}"></script>
+  <script defer src="{{ 'js/math-config.js' | url }}"></script>
+  <script defer id="MathJax-script" src="{{ 'js/mathjax/tex-svg-full.js' | url }}"></script>
+  {% for script in config.extra_javascript %}
+    {% if script.path is defined %}<script {% if script.type %}type="{{ script.type | e }}" {% endif %}{% if script.defer %}defer {% endif %}{% if script.async %}async {% endif %}src="{{ script.path | url }}"></script>
+    {% else %}<script src="{{ script | url }}"></script>{% endif %}
+  {% endfor %}
+  {% endblock %}
+</body>
+</html>

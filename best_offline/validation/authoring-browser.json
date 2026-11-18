@@ -1,0 +1,13 @@
+{
+  "browser": "157.0.4341.60",
+  "pages": [
+    "guide/authoring.html",
+    "guide/links.html",
+    "guide/code-highlighting.html",
+    "reference/math.html"
+  ],
+  "external": [],
+  "errors": [],
+  "mathExpressions": 22,
+  "passed": true
+}

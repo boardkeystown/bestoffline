@@ -1,0 +1,66 @@
+{
+  "site": "D:\\Python\\mkdocs_examples\\offline_docs\\best_offline\\build\\styled transfer\\site",
+  "browsers": [
+    {
+      "name": "edge",
+      "version": "157.0.4341.60",
+      "protocols": [
+        "file",
+        "http"
+      ],
+      "checks": [
+        "14 pages",
+        "required language samples",
+        "192 bundled languages",
+        "22 rendered math expressions",
+        "cards and Markdown inside HTML",
+        "disclosures",
+        "removed labels",
+        "highlighted code links and keyboard navigation",
+        "multi-token links and escaped C++",
+        "plain-text copy",
+        "wide cheat sheet and mobile layout",
+        "code links without JavaScript",
+        "equation reference",
+        "direct-file search result navigation",
+        "empty search",
+        "theme toggle and reload",
+        "mobile layout",
+        "no external requests",
+        "no browser errors"
+      ]
+    },
+    {
+      "name": "firefox",
+      "version": "142.0.1",
+      "protocols": [
+        "file",
+        "http"
+      ],
+      "checks": [
+        "14 pages",
+        "required language samples",
+        "192 bundled languages",
+        "22 rendered math expressions",
+        "cards and Markdown inside HTML",
+        "disclosures",
+        "removed labels",
+        "highlighted code links and keyboard navigation",
+        "multi-token links and escaped C++",
+        "plain-text copy",
+        "wide cheat sheet and mobile layout",
+        "code links without JavaScript",
+        "equation reference",
+        "direct-file search result navigation",
+        "empty search",
+        "theme toggle and reload",
+        "mobile layout",
+        "no external requests",
+        "no browser errors"
+      ]
+    }
+  ],
+  "externalRequests": [],
+  "errors": [],
+  "passed": true
+}

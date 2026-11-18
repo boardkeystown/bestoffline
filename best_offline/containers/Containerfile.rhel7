@@ -1,0 +1,4 @@
+FROM registry.access.redhat.com/ubi7/python-36@sha256:592b341772926e0617dd3b4fd40354640340e1f900090a682c8c3cea64b025e1
+WORKDIR /workspace/best_offline
+ENV BEST_OFFLINE_PYTHON=/opt/rh/rh-python36/root/usr/bin/python3.6
+CMD ["bash"]

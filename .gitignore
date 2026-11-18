@@ -1,0 +1,44 @@
+# Generated output and local development dependencies
+node_modules/
+.npm-cache/
+.venv*/
+venv/
+build/
+dist/
+site/
+*.egg-info/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Editors, operating-system metadata, and scratch files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+Desktop.ini
+*.swp
+*.swo
+*.tmp
+*.bak
+*.log
+!best_offline/validation/*.log
+
+# Local credentials and agent state
+.env
+.env.*
+!.env.example
+.aws/
+.ssh/
+.codex/
+.agents/
+*.pem
+*.key
+
+# Intentionally tracked: theme/js, theme/css, theme/fonts, licenses,
+# package-lock.json, all three *_wheelhouse folders (including wheels and
+# hash locks), and curated validation evidence. They support offline use.

@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% set base_url = "." %}
+{% block content %}
+<h1>Page not found</h1>
+<p>This page is not in the documentation bundle. Use the navigation or local search to find the topic.</p>
+<p><a href="{{ nav.homepage.url | url }}">Return to the overview →</a></p>
+{% endblock %}

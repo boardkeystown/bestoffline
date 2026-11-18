@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="150" viewBox="0 0 760 150" role="img" aria-labelledby="title desc">
+  <title id="title">Markdown to offline documentation</title>
+  <desc id="desc">Write Markdown, run mkdocs build, then open the generated HTML site.</desc>
+  <rect width="760" height="150" rx="8" fill="#f5f7fa"/>
+  <g fill="#fff" stroke="#b7c5d4"><rect x="20" y="35" width="210" height="80" rx="6"/><rect x="275" y="35" width="210" height="80" rx="6"/><rect x="530" y="35" width="210" height="80" rx="6"/></g>
+  <g stroke="#006bb3" fill="none" stroke-width="2"><path d="M240 75h24m-6-6 7 6-7 6"/><path d="M495 75h24m-6-6 7 6-7 6"/></g>
+  <g font-family="Arial, sans-serif" font-size="17" fill="#24292f" text-anchor="middle"><text x="125" y="68">Write Markdown</text><text x="380" y="68">Build with MkDocs</text><text x="635" y="68">Open the HTML site</text></g>
+  <g font-family="monospace" font-size="13" fill="#526579" text-anchor="middle"><text x="125" y="94">docs/*.md</text><text x="380" y="94">mkdocs build</text><text x="635" y="94">site/index.html</text></g>
+</svg>

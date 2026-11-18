@@ -1,0 +1,38 @@
+site_name: Best Offline
+site_description: Internal documentation, available wherever you work.
+use_directory_urls: false
+theme:
+  name: readthedocs
+  custom_dir: theme
+  include_search_page: false
+plugins:
+  - best-offline
+markdown_extensions:
+  - fenced_code
+  - tables
+  - admonition
+  - attr_list
+  - md_in_html
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+nav:
+  - Overview: index.md
+  - Getting started:
+      - Offline installation: guide/installation.md
+      - Theme configuration: guide/configuration.md
+  - Writing documentation:
+      - Markdown basics: guide/authoring.md
+      - Links, images, and downloads: guide/links.md
+      - Code highlighting: guide/code-highlighting.md
+      - Cards and styled content: guide/styled-content.md
+      - Clickable cheat sheets: guide/cheat-sheets.md
+      - LaTeX mathematics: reference/math.md
+  - Reference:
+      - Example API cheat sheet: reference/cheat-sheet.md
+      - Language gallery: reference/languages.md
+      - Components: reference/components.md
+      - Offline guarantees: reference/offline.md

@@ -1,0 +1,4 @@
+FROM registry.access.redhat.com/ubi9/python-39@sha256:447a4c9f6ead4f063bed8778793ac9e972004e5a55d103b375de83c885887e50
+WORKDIR /workspace/best_offline
+ENV BEST_OFFLINE_PYTHON=/usr/bin/python3.9
+CMD ["bash"]

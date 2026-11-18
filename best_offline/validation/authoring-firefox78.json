@@ -1,0 +1,60 @@
+{
+  "browser": "Firefox 78 ESR",
+  "site": "D:\\Python\\mkdocs_examples\\offline_docs\\best_offline\\build\\verified-rhel7\\site",
+  "pages": [
+    "index.html",
+    "guide/installation.html",
+    "guide/authoring.html",
+    "guide/configuration.html",
+    "reference/languages.html",
+    "reference/math.html",
+    "reference/components.html",
+    "reference/offline.html",
+    "404.html"
+  ],
+  "externalResources": [],
+  "checks": [
+    "direct-file pages",
+    "required language syntax tokens",
+    "192 registered languages",
+    "math SVG",
+    "equation rendering without errors",
+    "nested direct-file search navigation",
+    "dark mode",
+    "no horizontal overflow",
+    "no HTTP(S) resources in resource timing",
+    "outbound proxy disabled"
+  ],
+  "version": "78.15.0",
+  "highlighting": [
+    {
+      "count": 17,
+      "language": "python"
+    },
+    {
+      "count": 17,
+      "language": "lua"
+    },
+    {
+      "count": 17,
+      "language": "c"
+    },
+    {
+      "count": 25,
+      "language": "cpp"
+    },
+    {
+      "count": 11,
+      "language": "java"
+    },
+    {
+      "count": 34,
+      "language": "fortran"
+    },
+    {
+      "count": 11,
+      "language": "bash"
+    }
+  ],
+  "passed": true
+}

@@ -1,0 +1,9 @@
+# Example application settings for the documentation's local-download demo.
+# This is not a replacement for the project's mkdocs.yml.
+application:
+  name: measurement-demo
+  units: metres
+  sample_count: 3
+output:
+  directory: results
+  format: csv

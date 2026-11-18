@@ -1,0 +1,18 @@
+{
+  "python": "3.9.25",
+  "system": "Linux",
+  "machine": "x86_64",
+  "mkdocs": "1.6.1",
+  "python_network_blocked": true,
+  "container_network_none": true,
+  "checks": [
+    "dependencies",
+    "search-rebuild",
+    "override-build",
+    "override-audit",
+    "packaged-build",
+    "packaged-audit"
+  ],
+  "os_release": "Red Hat Enterprise Linux release 9.9 (Plow)",
+  "passed": true
+}
